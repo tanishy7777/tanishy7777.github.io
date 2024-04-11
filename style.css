@@ -1,0 +1,116 @@
+body{
+    /*background-color: #EE4878;*/
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar{
+    background-color: white;
+
+}
+
+#brand-logo{
+    width: 70px;
+    height: 70px;
+}
+
+#contact-me{
+    font-size: 1.25em;
+    background-color: white;
+    color: #EE4878;
+    border: 1px solid #EE4878;
+}
+#contact-me:hover{
+    background-color: #EE4878;
+    color: white;
+}
+
+nav{
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 5em;
+    color: black;
+}
+
+#subtitle{
+    color: #EE4878;
+    font-size: 2.5em;
+}
+
+
+
+#animated-container{
+    height: 500px;
+    width: 500px;
+}
+
+.my-work{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-1{
+    font-size: 2.5em;
+}
+
+#work-2{
+    font-size: 1.5em;
+    color: gray;
+}
+
+#email{
+    text-decoration:none;
+}
+
+.work-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#row-1, #row-2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#c1 ,#c2 ,#c3, #c4, #c5, #c6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #EE4878;
+    font-size: 50px;
+    width: 400px;
+    border-radius: 10px;
+    height: 300px;
+    border: 3px solid #EE4878;
+    background-color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#c1:hover ,#c2:hover ,#c3:hover, #c4:hover, #c5:hover, #c6:hover{
+    color: white;
+    width: 400px;
+    border-radius: 10px;
+    height: 300px;
+    background-color: #EE4878;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
