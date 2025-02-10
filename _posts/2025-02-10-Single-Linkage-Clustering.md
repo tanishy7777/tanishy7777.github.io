@@ -65,6 +65,20 @@ Algo:
           merge them,
           update list by deleting these and adding new cluster
 ```
+### Why bother with this?
+Why do we need yet another algorithm if we already have kmeans? To answer that question lets
+look at the following example:
+
+
+![Example where k means struggles](/assets/img/clustering/clustering_need.png)
+
+For data like this where the idea clustering dosent necesssarily have "balls in high dim"
+algorithms like k means, k median struggle. In this case Single linkage clustering is easily able to
+cluster the data. This is because it dosent assume that the data will be distributed around the 
+center of the cluster(ball shape). Instead, since it merges the clusters that are closer to each other first, it can adapt to a wider range of shapes of data.
+
+Another reason why this algorithm might be useful is when we dont know the target number of clusters(hierechichal clusters are especially useful in this case), we can create a family of clusters for each k
+
 
 ### How to define closeness of two clusters?
 There are several ways to define closeness between two clusters.
@@ -78,4 +92,24 @@ $$
 \end{aligned}
 $$
 
+![Dendograph of hierechical clustering](/assets/img/clustering/clustering_hiererchical.png)
 
+### Cost of Single Linkage Clustering
+Single Linkage Clustering essentially creates clusters ${C_1, C_2,..., C_k}$ from the data that maximizes the minimum inter-cluster distance
+maximize ${Cost_k(C)}$ 
+𝑐𝑜𝑠𝑡_𝑘 (𝐶) = $\min d_{C_i, C_j}(C_i, C_j)$
+
+Basically, assume among all the clusters the minimum distance between any 2 clusters is "d_min", then it tries to maximize this.
+
+![To illustrate the cost](/assets/img/clustering/clustering_cost.png)
+
+As shown in the what the Single Linkage cost, tries to do is, maximize the cost where, cost = min(d1,d2,d3)
+
+### Properties of Single Linkage Clustering
+- Effective in low dimension but might struggle in higher dimension due to "curse of dimensionality"
+- Usually needs $O(n^2)$ space
+
+### Examples where Single Linkage might fail
+TODO
+
+### MNIST example: Single Linkage Clustering
