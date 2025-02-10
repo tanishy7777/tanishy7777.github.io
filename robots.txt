@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://tanishy7777.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://www.tanishyelgoe.tech/sitemap.xml
