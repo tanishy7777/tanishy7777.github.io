@@ -1,11 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - tanishy7777
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
+  - tanishy7777/
   - jekyll/jekyll
   - twbs/bootstrap
   - jquery/jquery
