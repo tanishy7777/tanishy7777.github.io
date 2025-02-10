@@ -1,0 +1,12 @@
+/* Force desktop layout on mobile */
+body {
+    min-width: 1024px; /* Prevent layout from collapsing */
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    html, body {
+      overflow-x: scroll; /* Allow horizontal scroll if content overflows */
+      zoom: 0.8; /* Scale down the entire page for smaller screens */
+    }
+  }
+  
