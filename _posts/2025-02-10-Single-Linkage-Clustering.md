@@ -5,7 +5,7 @@ date: 2025-02-10 22:10:00 +5:30
 description: A brief post describing how the Single Linkage Agglomerative Clustering works
 tags: algorithms
 categories: algorithms
-thumbnail: assets/img/9.jpg
+thumbnail: assets/img/clustering/clustering_hiererchical.png
 images:
   lightbox2: true
   photoswipe: true
