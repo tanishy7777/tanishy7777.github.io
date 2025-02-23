@@ -59,17 +59,6 @@ ninja.data = [{
           window.location.href = "/blog/2025/Single-Linkage-Clustering/";
         
       },
-    },{id: "post-graham-scan-finding-the-convex-hull-in-object-detection",
-      
-        title: "Graham Scan Finding the Convex Hull in Object Detection",
-      
-      description: "Learn how the Graham Scan algorithm works to find the convex hull of keypoints in object detection with fun explanations and math",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2025/graham-scan-convex-hull-algorithm/";
-        
-      },
     },{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
