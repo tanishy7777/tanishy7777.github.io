@@ -65,7 +65,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-single-linkage-agglomerative-clustering",
+            },{id: "post-dynamic-time-warping",
+      
+        title: "Dynamic Time Warping",
+      
+      description: "A brief post describing how the Dynamic Time Warping works",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/DTW_and_DTW_GI/";
+        
+      },
+    },{id: "post-single-linkage-agglomerative-clustering",
       
         title: "Single Linkage Agglomerative Clustering",
       
