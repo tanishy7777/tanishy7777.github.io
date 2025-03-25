@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-dynamic-time-warping",
+        },{id: "post-timeseries-clustering-using-diffusion-maps",
+      
+        title: "Timeseries Clustering using Diffusion Maps",
+      
+      description: "A brief post testing various dimensionality reduction techniques for evaluating Timeseries clustering using K-means.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/Diffusion-Maps-Clustering/";
+        
+      },
+    },{id: "post-dynamic-time-warping",
       
         title: "Dynamic Time Warping",
       
