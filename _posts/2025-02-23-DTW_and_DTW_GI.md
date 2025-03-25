@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dynamic Time Warping
-date: 2025-02-10 22:10:00 +5:30
+date: 2025-02-23 22:10:00 +5:30
 description: A brief post describing how the Dynamic Time Warping works
 tags: algorithms
 categories: algorithms
