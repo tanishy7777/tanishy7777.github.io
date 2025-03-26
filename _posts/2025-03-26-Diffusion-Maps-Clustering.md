@@ -729,6 +729,22 @@ PCA also shows good separation  **0.456**, followed by t-SNE **0.300**, and raw 
 
 TODO: # Add legend/labels in the plots
 
+
+## Conclusion: Why diffusion maps perform well for timeseries data/
+
+### Capturing Non Linear Manifolds
+Diffusion maps work by constructing a Markov process over the data points, where the transition probabilities reflect local similarities(as dtw is a local similarity). This process uncovers the complex nonlinearity of the underlying data manifold(manifold learning). 
+
+For time-series data, which often lie on complex, nonlinear manifolds, this means that the essential complex structures(such as temporal correlations) are preserved in the lower-dimensional space after the embedding.
+
+### Comparison with Other Techniques
+**PCA**: PCA is a linear dimensionality reduction technique, due to this it can fail to capture the complex, nonlinear structures in the data, for timeseries data with multiple dimensions this is often the case. 
+The slightly lower ARI (≈ 0.39) and silhouette score (≈ 0.456) suggest that PCA does not separate the classes as effectively.
+
+**t-SNE**: t-SNE is good at preserving local structure but can sometimes distort the global relationships between clusters. Its lower ARI (≈ 0.257) and silhouette score (≈ 0.300) imply that while it can reveal local groupings, it might not be as effective at maintaining the overall cluster structure in the context of time-series.
+
+**Raw Feature Space**: Clustering in the raw feature space (ARI ≈ 0.297 and silhouette ≈ 0.130) dont form very nice clusters due to high dimensionality and noise, making it harder to uncover the inherent temporal patterns(complex non-linear structures).
+
 ## Explorative
 
 ## References Used:
